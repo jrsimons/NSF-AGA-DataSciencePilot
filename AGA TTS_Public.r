@@ -1,8 +1,18 @@
-#This code starts with a Single Audit Summary Report from the Federal Audit Clearinghouse website. Please visit this website https://facdissem.census.gov/SearchA133.aspx to search for relevant audits then download the single audit summary document(s). For this model we will want to pull all institutions with relevant CFDA prefixes. We can search by this prefix under "federal awards" in the search options. Once we've selected the right prefix(es) and the relevant fiscal years we can search for single audit files. 
+#This code starts with a Single Audit Summary Report from the Federal Audit Clearinghouse website. 
+#Please visit this website https://facdissem.census.gov/SearchA133.aspx to search for relevant audits then download the single audit summary document(s). 
+#For this model we will want to pull all institutions with relevant CFDA prefixes. We can search by this prefix under "federal awards" in the search options. 
+#Once we've selected the right prefix(es) and the relevant fiscal years we can search for single audit files. 
 
-#On the search results tab there is an option to download the summary document that we will use. The summary document provides a machine readable format of the single audit results, available from FY13 onward. Once this document is downloaded, move it to the working directory for the code. The FAC limits downloads to 10,000 institutions at one time, this means that data may need to be split across fiscal years. In the data intake lines below there are lines that are currently inactive to navigate including multiple sheets.
+#On the search results tab there is an option to download the summary document that we will use. 
+#The summary document provides a machine readable format of the single audit results, available from FY13 onward. 
+#Once this document is downloaded, move it to the working directory for the code. 
+#The FAC limits downloads to 10,000 institutions at one time, this means that data may need to be split across fiscal years. 
+#In the data intake lines below there are lines that are currently inactive to navigate including multiple sheets.
 
-#Lastly, this is an example and is not meant to be a definitive model ready for use. The process has been simplified for demonstration purposes. There are many assumptions underlying specific parts of the regression model that should be considered before using a tool like this for institutional use. Please review the ReadMe available in the repository for more information.
+#Lastly, this is an example and is not meant to be a definitive model ready for use. 
+#The process has been simplified for demonstration purposes. 
+#There are many assumptions underlying specific parts of the regression model that should be considered before using a tool like this for institutional use. 
+#Please review the ReadMe available in the repository for more information.
 
 suppressWarnings(library(dplyr))
 suppressWarnings(library(readxl))
