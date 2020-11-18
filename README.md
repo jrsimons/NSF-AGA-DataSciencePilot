@@ -1,5 +1,5 @@
 # NSF-AGA-DataSciencePilot
-Repository for public branch of open source NSF logistic improper payments model.
+Repository for the public branch of the open source NSF logistic improper payments model.
 
 This model is for discussion and exploration purposes only. The tool depicted here should not be considered a complete product, nor is it ready for deployment. However, this code can serve as an important starting point for analyzing the single audit reports which are publicly available from the Federal Audit Clearinghouse (FAC) database. This code can be expanded to apply to your own improper payments model or other potential compliance use cases. 
 
