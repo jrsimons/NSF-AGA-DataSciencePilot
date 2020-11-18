@@ -25,8 +25,12 @@ suppressWarnings(library(caret))
 suppressWarnings(library(ROCR))
 suppressWarnings(library(png))
 
-#Relevant Agency CFDA numbers, add prefixes as necessary to the list. Prefixes here will need to correspond to the CFDA numbers selected from the Single Audit Database.
+#Relevant Agency CFDA numbers, add prefixes as necessary to the list, an example is included below. 
+#CFDA_Entry<-c('47.','36.','10.')
+#Prefixes here will need to correspond to the CFDA numbers selected in the original search from the Single Audit Database.
+
 CFDA_Entry<-c('47.')
+
 
 #Bring in all data from the Single Audit Database, if there are multiple entries for CFDA Information (for a large number of fiscal years or larger agencies this can occur), join using the additional excel read in with the optional bind_rows function before continuing.
 
