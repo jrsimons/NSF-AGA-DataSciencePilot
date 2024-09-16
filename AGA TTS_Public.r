@@ -46,7 +46,7 @@ head(General_Info)
 
 #This section takes the finding data and converts the dimensions into indicator variables so that they can be summed and so that multiple dimensions can be reviewed.
 
-FindingData_working<- FindingData %>% mutate(Compliance_Allowable_Activity= ifelse(grepl("A",TYPEREQUIREMENT),1,0))
+FindingData_working<- Finding_Data %>% mutate(Compliance_Allowable_Activity= ifelse(grepl("A",TYPEREQUIREMENT),1,0))
 FindingData_working<- FindingData_working %>% mutate(Compliance_Allowable_Costs= ifelse(grepl("B",TYPEREQUIREMENT),1,0))
 FindingData_working<- FindingData_working %>% mutate(Compliance_Cash_Management= ifelse(grepl("C",TYPEREQUIREMENT),1,0))
 FindingData_working<- FindingData_working %>% mutate(Compliance_D= ifelse(grepl("D",TYPEREQUIREMENT),1,0))
